@@ -2,7 +2,7 @@
 
 #### Contributers - veselink1, lubomarinski
 
-## Information
+## About
 CreoWeb is a website builder that generates HTML, CSS and JavaScript assets under the hood! The project is built on ASP.NET Core and ReactJS. The projects that users create with it are modular, component-based websites, also built upon ReactJS. User's projects can be previewed, made public and even downloaded as a .zip file!
 
 ![Preview](https://github.com/veselink1/CreoWeb/blob/master/screens/Screenshot%20(11).png)
