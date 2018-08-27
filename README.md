@@ -8,6 +8,12 @@ CreoWeb is a website builder that generates HTML, CSS and JavaScript assets unde
 This is the homepage of the project.
 
 
-![Homepage](/screens/Screenshot (12).png)
+![Homepage](https://github.com/veselink1/CreoWeb/blob/master/screens/Screenshot%20(12).png)
 
 And this is the dashboard, where the users can create, edit and delete their projects and the separate components and pages that they are based on.
+
+![Homepage](https://github.com/veselink1/CreoWeb/blob/master/screens/Screenshot%20(33).png)
+![Homepage](https://github.com/veselink1/CreoWeb/blob/master/screens/Screenshot%20(34).png)
+![Homepage](https://github.com/veselink1/CreoWeb/blob/master/screens/Screenshot%20(37).png)
+
+The editor consists of multiple panes that allow the user to configure all the aspects of the component or page that he/she creates.
