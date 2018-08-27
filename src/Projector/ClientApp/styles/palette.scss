@@ -1,0 +1,11 @@
+@import 'md-palette';
+
+$palette: (
+  primary: md-palette(Teal, 500),
+  secondary: md-palette(Pink, A200)
+);
+
+@function palette($color) {
+  $result: map-get($palette, $color);
+  @return $result;
+}

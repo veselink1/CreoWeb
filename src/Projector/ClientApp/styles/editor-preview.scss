@@ -1,0 +1,31 @@
+.editor-preview {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .error-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+    background-color: rgba(0,0,0,0.6);
+    color: red;
+    font-family: 'Fira Mono', monospace;
+    white-space: pre;
+    transition: 0.2s opacity ease-in-out;
+  }
+
+  .error-overlay.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .error-overlay.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+}

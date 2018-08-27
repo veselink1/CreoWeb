@@ -1,0 +1,25 @@
+.signup-page {
+  display: block;
+  margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+  width: 100%;
+  max-width: 24em;
+  min-width: 18em;
+  user-select: none;
+
+  .signup-paper {
+    padding: 1em;
+    position: relative;
+  }
+
+  .terms-checkbox {
+    margin: 18px 0 30px;
+
+    input {
+      width: 26px !important;
+    }
+  }
+
+}

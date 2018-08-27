@@ -1,0 +1,43 @@
+.val-editor {
+  width: 100%;
+  padding: 0 4px;
+  padding-bottom: 8px;
+
+  .string-editor,
+  .number-editor,
+  .bool-editor {
+    width: 100%;
+  }
+
+  .object-props, .array-elems {
+    width: 100%;
+    border-left: 2px solid #BCBCBC;
+    padding-left: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .chrome-picker {    
+    max-width: 14em !important;
+    margin: 8px 24px !important;
+    width: 100% !important;
+  }
+
+}
+
+.object-add-prop {
+  width: 100%;
+  
+  .object-new-prop-name {
+    width: calc(100% - 48px);
+    display: inline-block;
+  }
+
+  .object-add-prop-button {
+    width: 40px;
+    padding: 4px;
+    display: inline-block;    
+    position: relative;
+    top: 10px;
+  }
+}

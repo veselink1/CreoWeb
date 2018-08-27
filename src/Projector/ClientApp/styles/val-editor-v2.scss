@@ -1,0 +1,101 @@
+@import 'md-palette';
+
+.properties-panel > .val-editor {
+  padding-bottom: 2px;
+}
+
+.val-editor {
+  background-color: white;
+  padding: 0;
+  overflow: visible;
+
+  input, textarea {
+    font-family: 'Fira Mono', monospace !important;
+  }
+
+  .object-editor {
+    .add-property {
+      padding: 4px 8px;
+      .text-field {
+        width: calc(100% - 48px);
+        display: inline-block;
+      }
+      .button {
+        width: 48px;
+        display: inline-block;
+      }
+    }
+
+    .property .value {
+      .string-editor, .number-editor, .null-editor, .boolean-editor {
+        padding: 0 8px;
+      }
+    }
+
+    .property {
+      width: 100%; 
+      margin-bottom: 12px;
+      padding-bottom: 4px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      border-left: 3px solid #999;
+
+      &.string-property {
+        border-left-color: md-palette(Orange);
+      }
+
+      &.number-property {
+        border-left-color: md-palette(Green);
+      }
+
+      &.boolean-property {
+        border-left-color: md-palette(Pink);
+      }
+
+      &.null-property {
+        border-left-color: md-palette(Purple);
+      }
+      
+      &.null-property {
+        border-left-color: md-palette(Cyan);
+      }
+
+      &.collapsed {
+        height: 54px;
+        overflow: visible;
+
+        &> .value {
+          display: none;
+        }
+      }
+
+      &> .key {
+        float: left;
+        width: 40%;
+        position: relative;
+        padding: 8px;
+        color: #a0a0a0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+      &> .toggle {
+        display: block;
+        float: left;
+        width: 20%;
+        text-align: center;
+      }
+
+      &> .type {
+        float: right;
+        width: 40%;
+        height: 48px;
+      }
+
+      &> .value {
+        float: left;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.terms-of-use-page {
+
+  .page-container {
+    margin-left: 20%;
+    margin-right: 10%;
+    background-color: white;
+    padding: 24px;
+
+    .page-heading {
+      font-size: 24px;
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+
+    .terms-block {
+
+      .terms-heading {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      .terms-text {
+        p {
+          line-height: 1.54;
+          margin: 10px 0;
+          font-size: 14px;
+        }
+      }
+
+    }
+  }
+  
+  footer.main-footer {
+    width: 100%;
+    height: 117px;
+    background-color: #eee;
+    position: relative;
+
+    .footer-logo {
+      font-size: 24px;
+      color: #757575;
+      padding: 44px;
+      font-family: Raleway, sans-serif;
+      font-weight: 600;
+    }
+
+    .footer-links {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      text-align: right;
+      font-size: 14px;
+      padding: 50px;
+
+      a {
+          padding: 0 8px;
+      }
+    }
+    
+    a {
+      text-decoration: none;
+      color: #757575;
+
+      &:hover {
+          text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+$group-title-color: #525252;
+$group-title-font: 'Roboto';
+
+$group-inset: 8px;
+$group-bottom-margin: 6px;
+
+$group-even-background: white;
+$group-odd-background: white;
+
+$group-divisor-width: 1px;
+
+.color-editor {
+  .chrome-picker > div:first-child {
+    padding-bottom: 40% !important;
+  }
+  .chrome-picker .flexbox-fix > div {
+    padding-left: 0 !important;
+  }
+}
+
+.style-editor {
+
+  .style-editor-property-group {
+      
+    padding-top: 4px;
+    padding-bottom: 6px;
+
+    .style-editor-property-group-title {
+      color: $group-title-color;
+      font-family: $group-title-font;
+      margin-bottom: $group-bottom-margin;
+      background: #e8e8e8;
+      padding: 6px;
+    }
+
+    &:nth-child(even) {
+      background: $group-even-background;
+    }
+
+    &:nth-child(odd) {
+      background: $group-odd-background;
+    }
+
+  }
+
+  .style-editor-property {
+    
+    padding-left: $group-inset;
+    margin-bottom: 4px;
+
+    .style-editor-property-title {
+      color: $group-title-color;
+      font-family: $group-title-font;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 4px;
+      padding-right: 8px;
+      text-align: right;
+    }
+
+    .style-editor-property-editor {
+      padding-top: 2px;
+      padding-left: 4px;
+      padding-right: 4px;
+
+      .style-editor-property-input {
+        display: inline-block;
+        width: calc(100% - 20px);
+        max-width: 300px;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 2px;
+        border: none;
+        border-bottom: 1px solid rgb(224, 224, 224);
+        outline: none;
+        color: rgba(0, 0, 0, 0.870588);
+        font-family: Consolas, "Courier New", monospace;
+      }
+
+      select {
+        display: inline-block;
+        width: 20px;
+        border: none;
+        outline: none;
+      }
+
+      optgroup {
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(0, 0, 0, 0.870588);
+        font-family: Consolas, "Courier New", monospace;
+      }
+
+      option {
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(0, 0, 0, 0.870588);
+        font-family: Consolas, "Courier New", monospace;
+      }
+    }
+
+  }
+
+
+}

@@ -1,0 +1,41 @@
+.expandable-menu {
+
+  .expandable-menu-header {
+    
+    text-align: left;
+    border: 1px solid hsl(0, 0%, 32%);
+
+    .expandable-menu-toggle {
+      border: 1px solid hsl(0, 0%, 32%);
+    }
+
+    .expandable-menu-title {
+      color: black
+    }
+
+  }
+  
+  .expandable-menu-items {
+    border-left: 1px solid hsl(0, 0%, 32%);
+    margin-left: 4px;
+    padding-left: 3px;
+
+    .expandable-menu-item {
+      margin: 3px;
+    }
+
+  }
+
+}
+
+.expandable-menu.expandable-menu-expanded {
+  .expandable-menu-items {
+    display: block;
+  }
+}
+
+.expandable-menu.expandable-menu-collapsed {
+  .expandable-menu-items {
+    display: none;
+  }
+}

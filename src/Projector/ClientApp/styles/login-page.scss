@@ -1,0 +1,27 @@
+.login-page {
+  display: block;
+  margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+  width: 100%;
+  max-width: 24em;
+  min-width: 18em;
+  user-select: none;
+
+  .login-paper {
+    padding: 1em;
+    position: relative;
+  }
+
+  .fab-signup {
+    position: absolute;
+    top: 40px;
+    right: -28px;
+  }
+
+  .remember-me {
+    margin-bottom: 0.8em;
+  }
+
+}

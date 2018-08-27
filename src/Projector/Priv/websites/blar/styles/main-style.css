@@ -1,0 +1,30 @@
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+/* Applied to all elements with "my-button" class. */
+ .my-button {
+   padding: 6px 14px;
+   border: 2px solid transparent;
+   border-radius: 2px;
+   color: white;
+   background-color: rgb(255, 64, 129);
+   margin-right: 8px;
+   outline: none;
+   font-size: 14px;
+   font-weight: 500;
+   box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+   transition: 0.1s all ease-in-out;
+}
+/* Applied when the button is selected. */
+ .my-button.selected {
+   border-color: black;
+}
+/* Applied when the mouse cursor is over a button. */
+ .my-button:hover {
+   background-color: rgb(255, 141, 180);
+}
+/* Applied when the button is clicked. */
+ .my-button:active {
+   background-color: rgb(255, 159, 192);
+   box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+}

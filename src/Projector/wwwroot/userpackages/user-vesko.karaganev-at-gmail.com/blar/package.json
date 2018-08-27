@@ -1,0 +1,9 @@
+{
+  "name": "creo-web-vesko.karaganev-at-gmail.com-blar",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "lodash": "4.17.4",
+    "url-params": "1.0.2"
+  }
+}

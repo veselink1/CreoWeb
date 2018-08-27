@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "CreoWeb";
+}
+<environment names="Development">
+    <div id="app"
+            asp-prerender-module="ClientApp/boot-server"
+            asp-prerender-webpack-config="webpack.config.js"
+            asp-prerender-data=@ViewData["PrerenderData"]></div>
+</environment>
+
+<environment names="Staging,Production">
+    <div id="app"></div>
+</environment>
+
+<script src="~/lib/monaco-editor/min/vs/loader.js"></script>
+<script>
+    (function () {
+        var handlers = [];
+        var monacoEditor = null;
+        function onMonacoEditorLoad(f) {
+            if (monacoEditor) {
+                for (var i = 0; i < handlers.length; i++) {
+                    handlers[i](monacoEditor);
+                }
+                handlers = [];
+                f(monacoEditor);
+            }
+            handlers.push(f);
+        }
+        window.onMonacoEditorLoad = onMonacoEditorLoad;
+        require.config({ paths: { 'vs': '/lib/monaco-editor/min/vs' } });
+        require(['vs/editor/editor.main'], function () {
+            monacoEditor = monaco.editor;
+            onMonacoEditorLoad(function () { });
+        });
+    })();
+</script>
+
+<script src="~/dist/vendor.js"></script>
+<script src="~/dist/main.js"></script>

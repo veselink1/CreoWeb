@@ -1,0 +1,54 @@
+@import 'palette';
+
+.error-viewer {
+  width: 100%;
+  height: 100%;
+  padding-top: 3px;
+  padding-left: 3px;
+  overflow-y: auto;
+  overflow-x: auto;
+  background-color: #303030;
+  padding: 8px;
+  font-family: 'Fira Mono', monospace;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+
+  .error-list {
+    padding-bottom: 4em;
+    white-space: pre;
+  }
+
+  .error, .success {
+    margin: 8px 0;
+    font-weight: bold;
+    border-bottom: 1px dashed white;
+    padding-bottom: 8px;
+  }
+
+  .error {
+    .timestamp {
+      color: white;
+    }
+    .message::first-line {
+      color: #FF4081;
+    }
+    .message {
+      color: #FFD740;
+    }
+  }
+
+  .success {
+    .timestamp {
+      color: white;
+    }
+    .message::first-line {
+      color: #00E676;
+    }
+    .message {
+      color: #FFD740;
+    }
+  }
+
+}

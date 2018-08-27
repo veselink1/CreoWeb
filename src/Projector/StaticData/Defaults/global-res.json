@@ -1,0 +1,17 @@
+{
+    "d0c7407b-1281-40da-8e70-02b719151d45": {
+        "name": "handleClick",
+        "type": "JS",
+        "value": "export default function handleClick() {\n    alert(\"You clicked me!\");\n}"
+    },
+    "7c1bb768-62c6-491c-988a-1cbf76bce28d": {
+        "name": "mainStyle",
+        "type": "CSS",
+        "value": "body {\n    font-family: Arial, Helvetica, sans-serif;\n}\n\n/* Applied to all elements with \"my-button\" class. */\n.my-button {\n    padding: 6px 14px;\n    border: 2px solid transparent;\n    border-radius: 2px;\n    color: white;\n    background-color: rgb(255, 64, 129);\n    margin-right: 8px;\n    outline: none;\n    font-size: 14px;\n    font-weight: 500;\n    box-shadow: 1px 2px 4px rgba(0,0,0,0.2);\n    transition: 0.1s all ease-in-out;\n}\n\n/* Applied when the button is selected. */\n.my-button.selected {\n  border-color: black;\n}\n\n/* Applied when the mouse cursor is over a button. */\n.my-button:hover {\n    background-color: rgb(255, 141, 180);\n}\n\n/* Applied when the button is clicked. */\n.my-button:active {\n    background-color: rgb(255, 159, 192);\n    box-shadow: 2px 4px 8px rgba(0,0,0,0.2);\n}"
+    },
+    "4f28bd79-de0d-47f4-90ed-d46df3430c8f": {
+        "name": "INTL",
+        "type": "JSON",
+        "value": "{\"BG\":{\"WELCOME\":\"Здравейте!\",\"LANGUAGE\":\"Изберете Вашия език\"},\"EN\":{\"WELCOME\":\"Hello!\",\"LANGUAGE\":\"Choose your language\"},\"DE\":{\"WELCOME\":\"Hallo!\",\"LANGUAGE\":\"Wähle Ihre Sprache\"},\"CH\":{\"WELCOME\":\"你好!\",\"LANGUAGE\":\"选择你的语言\"},\"RU\":{\"WELCOME\":\"Здравствуйте!\",\"LANGUAGE\":\"Выберите ваш язык\"}}"
+    }
+}

@@ -1,0 +1,34 @@
+.properties-panel {
+  overflow-x: hidden;
+
+  .properties-block {
+    position: relative;
+    display: block;
+  }
+
+  .properties-block-change {
+    animation-name: properties-block-anim;
+    animation-delay: 0s;
+    animation-duration: 0.2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes properties-block-anim {
+    0% {
+      left: -40%;
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0.2;
+    }
+
+    100% {
+      left: 0%;
+      opacity: 1;
+    }
+  }
+}

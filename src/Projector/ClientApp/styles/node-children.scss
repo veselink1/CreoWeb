@@ -1,0 +1,59 @@
+.node-children-root {
+
+  overflow-x: hidden;
+  
+  .content-block-item {
+    position: relative;
+    display: block;
+  }
+
+  .content-block-item-change {
+    animation-name: children-content-block-anim;
+    animation-delay: 0s;
+    animation-duration: 0.2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes children-content-block-anim {
+    0% {
+      left: -40%;
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0.2;
+    }
+
+    100% {
+      left: 0%;
+      opacity: 1;
+    }
+  }
+}
+
+.reorder-list {
+  .list-item {
+    background-color: white;
+    width: 100%;
+    height: 54px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+
+    .list-item-col {
+      display: block;
+      float: left;
+      width: 50%;
+      height: 100%;
+    }
+
+    .comp-name, .comp-actions {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-left: 24px;
+      font-size: 14px;
+    }
+  }
+}
