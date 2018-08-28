@@ -1,6 +1,6 @@
 # CreoWeb - Create & Share beautifully dynamic websites
 
-#### Contributors - veselink1, lubomarinski
+#### Contributors - [veselink1](https://github.com/veselink1), [lubomarinski](https://github.com/lubomarinski)
 *This is a project from 2017*
 
 ## About
